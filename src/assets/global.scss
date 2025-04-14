@@ -1,0 +1,34 @@
+@use 'bootstrap/scss/bootstrap' as *;
+@use '@progress/kendo-theme-bootstrap/scss/index.scss' as * with (
+  $kendo-button-bg: #ff69b4,
+  $kendo-panelbar-bg: #1bb822
+);
+
+// Include only Button and PanelBar styles.
+@include kendo-button--styles();
+@include kendo-panelbar--styles();
+/*
+@use '@progress/kendo-theme-bootstrap/scss/all.scss' as * with (
+  $kendo-button-bg: #ff69b4
+);
+
+@use "sass:map";
+
+$kendo-colors: map.merge(
+$kendo-colors,
+(
+  app-surface: #f8f8f8,
+  on-app-surface: #111111
+)
+);
+
+$kendo-colors: map.merge($kendo-colors, k-generate-color-variations('primary', #9c27b0, 'default'));
+$kendo-colors: map.merge($kendo-colors, k-generate-color-variations('secondary', #e51a5f, 'default'));
+$kendo-colors: map.merge($kendo-colors, k-generate-color-variations('base', #eaeaea, 'default'));
+
+@include kendo-theme--styles();
+*/
+
+body {
+    background-color: lightblue;
+  }
