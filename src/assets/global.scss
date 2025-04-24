@@ -1,7 +1,19 @@
-@use 'bootstrap/scss/bootstrap' as *;
+
 @use '@progress/kendo-theme-bootstrap/scss/index.scss' as * with (
-  $kendo-button-bg: #ff69b4,
-  $kendo-panelbar-bg: #1bb822
+  $kendo-colors: (
+    app-surface: #ff69b4,
+    on-app-surface: #111111,
+    primary-subtle: #ffeceb,
+    primary-subtle-hover: #ffdedb,
+    primary-subtle-active: #ffc8c4,
+    primary: #ff6358,
+    primary-hover: #ea5a51,
+    primary-active: #d45349,
+    primary-emphasis: #ff9d97,
+    primary-on-subtle: #5c201c,
+    on-primary: #ffffff,
+    primary-on-surface: #ff6358
+  )
 );
 
 // Include only Button and PanelBar styles.
